@@ -1,3 +1,3 @@
 # Plataformes de publicació i distribució
 
-## Pràctica - distribució de vídeo a la xarxa
+## Pràctica - Distribució de vídeo a la xarxa
