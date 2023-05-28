@@ -23,6 +23,10 @@
     background-position: center;
     background-size: cover;
   }
+
+  .enunciat {
+    color: darkblue;
+  }  
   
   header {
     padding: var(--spacing-company) 0;
