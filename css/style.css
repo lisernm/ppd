@@ -18,13 +18,13 @@
   
   /* Header */
   .hero {
-    background-color: #394046;
+    background-color: #011c33;
     background-image: url("../img/header.jpg");
     background-position: center;
     background-size: cover;
-    -moz-opacity: 0.80;
-    -khtml-opacity: 0.8;
-    opacity: 0.8;    
+    -moz-opacity: 0.60;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;    
   }
 
   .enunciat {
