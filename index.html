@@ -21,7 +21,8 @@
                 <ul role="listbox">
                   <li><a href="#1.1">Tasca 1.1</a></li>
                   <li><a href="#1.2">Tasca 1.2</a></li>
-                  <li><a href="#1.2">Tasca 1.3</a></li>
+                  <li><a href="#1.3">Tasca 1.3</a></li>
+                  <li><a href="#1.4">Tasca 1.4</a></li>
                 </ul>
               </details>
             </li>
@@ -91,7 +92,7 @@
         </article> 
         <article>
           <p class="enunciat">
-            <span class="num_tasca" id="1.2">Tasca 1.3 </span>
+            <span class="num_tasca" id="1.3">Tasca 1.3 </span>
             Publica el fitxer .html i el vídeo en un servidor web gratuït o al CDN vist a la PAC1 (web estàtica)
             per tal de veure'l amb una adreça http pública i valora la experiència a nivell d’usuari/a (retard de
             visualització, qualitat, etc).
@@ -125,7 +126,35 @@
             L'experiència d'usuari ha estat molt bona, 
             no s'ha percebut retard de visualització i la qüalitat del video és bona.
           </p>                     
-        </article>                  
+        </article>
+        <article>
+          <p class="enunciat">
+            <span class="num_tasca" id="1.4">Tasca 1.4 </span>
+            Afegeix funcionalitat al vídeo mitjançant els diferents atributs que el tag &lt;video&gt; ofereix.
+            Experimenta!. Dona'm l'adreça web del vídeo per poder-lo visualitzar.
+          </p>
+          <p>
+            Tot i que el video no te so, s'ha afegit la propietat <strong>mute</strong> per dehabilitar la reproducció d'audio.
+            Tanmateix, s'ha afegit l'atribut <strong>autoplay</strong> per a que el video es reprodueixi automàticament
+            i <strong>loop</strong> per a que ho faci en bucle. A més, s'ha indicat al source que el video es reprodueixi 
+            dels segons 2 a 8 mitjançant <strong>#t=2,8</strong>.
+          </p>           
+          <pre><code>&lt;video muted atuplay loop poster=&quot;img/clip1_cover.JPG&quot; class=&quot;clip_video&quot;&gt;
+  &lt;source src=&quot;https://lisernm.blob.core.windows.net/ppd/clip_1.webm#t=2,8&quot; type=&quot;video/webm&quot;&gt;
+  &lt;source src=&quot;https://lisernm.blob.core.windows.net/ppd/clip_1_original.mp4#t=2,8&quot; type=&quot;video/mp4&quot;&gt;
+  &lt;p&gt;El teu navegador no pot reprodu&iuml;r aquest video.&lt;/p&gt;
+&lt;/video&gt;
+</code></pre>
+          <video muted atuplay loop poster="img/clip1_cover.JPG" class="clip_video">
+            <source src="https://lisernm.blob.core.windows.net/ppd/clip_1.webm#t=2,8" type="video/webm">
+            <source src="https://lisernm.blob.core.windows.net/ppd/clip_1_original.mp4#t=2,8" type="video/mp4">
+            <p>El teu navegador no pot reproduïr aquest video.</p>
+          </video>
+          <p>
+            L'experiència d'usuari ha estat molt bona, 
+            no s'ha percebut retard de visualització i la qüalitat del video és bona.
+          </p>                     
+        </article>                         
       </section>
     </main>
   </body>
