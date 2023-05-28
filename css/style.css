@@ -26,7 +26,11 @@
 
   .enunciat {
     color: #000078;
-  }  
+  }
+  
+  .num_tasca {
+    font-weight: bold;
+  }
   
   header {
     padding: var(--spacing-company) 0;
