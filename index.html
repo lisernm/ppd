@@ -21,6 +21,7 @@
                 <ul role="listbox">
                   <li><a href="#1.1">Tasca 1.1</a></li>
                   <li><a href="#1.2">Tasca 1.2</a></li>
+                  <li><a href="#1.2">Tasca 1.3</a></li>
                 </ul>
               </details>
             </li>
@@ -80,11 +81,6 @@
   &lt;p&gt;El teu navegador no pot reprodu&iuml;r aquest video.&lt;/p&gt;
 &lt;/video&gt;
 </code></pre>
-          <video controls poster="img/clip1_cover.JPG" class="clip_video">
-            <source src="https://lisernm.blob.core.windows.net/ppd/clip_1.webm" type="video/webm">
-            <source src="https://lisernm.blob.core.windows.net/ppd/clip_1_original.mp4" type="video/mp4">
-            <p>El teu navegador no pot reproduïr aquest video.</p>
-          </video>
           <p>
             La particularitat de HTML 5 a l'hora de publicar i visualitzar video és que
             permet incloure multiples formats (podem veure com a l'exemple de codi tenim diferents elements source).
@@ -92,7 +88,44 @@
             funcionalitats com afegir una portada, mostrar els controls de reproducció, deshabilitar el so o activar
             la reproducció automàtica.
           </p> 
-        </article>          
+        </article> 
+        <article>
+          <p class="enunciat">
+            <span class="num_tasca" id="1.2">Tasca 1.3 </span>
+            Publica el fitxer .html i el vídeo en un servidor web gratuït o al CDN vist a la PAC1 (web estàtica)
+            per tal de veure'l amb una adreça http pública i valora la experiència a nivell d’usuari/a (retard de
+            visualització, qualitat, etc).
+          </p>
+          <p>
+            El lloc web s'ha publicat mitjançant github pages, 
+            aquesta eina no permet reproduïr recursos de video pujats al repo de github,
+            pel que s'ha creat un compte d'Azure d'estudiant i s'ha habilitat un blobstorage on pujar els recursos.
+            A continuació es mostra el codi font i el component de video.
+          </p>           
+          <pre><code>&lt;video controls poster=&quot;img/clip1_cover.JPG&quot; class=&quot;clip_video&quot;&gt;
+  &lt;source src=&quot;https://lisernm.blob.core.windows.net/ppd/clip_1.webm&quot; type=&quot;video/webm&quot;&gt;
+  &lt;source src=&quot;https://lisernm.blob.core.windows.net/ppd/clip_1_original.mp4&quot; type=&quot;video/mp4&quot;&gt;
+  &lt;p&gt;El teu navegador no pot reprodu&iuml;r aquest video.&lt;/p&gt;
+&lt;/video&gt;
+</code></pre>
+          <p>
+            Per a que el video s'adapti a la pàgina web s'ha afegit la classe clip_video amb el següent estil:
+            <pre><code>.clip_video {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: var(--spacing);
+}</code></pre>                        
+          </p>
+          <video controls poster="img/clip1_cover.JPG" class="clip_video">
+            <source src="https://lisernm.blob.core.windows.net/ppd/clip_1.webm" type="video/webm">
+            <source src="https://lisernm.blob.core.windows.net/ppd/clip_1_original.mp4" type="video/mp4">
+            <p>El teu navegador no pot reproduïr aquest video.</p>
+          </video>
+          <p>
+            L'experiència d'usuari ha estat molt bona, 
+            no s'ha percebut retard de visualització i la qüalitat del video és bona.
+          </p>                     
+        </article>                  
       </section>
     </main>
   </body>
