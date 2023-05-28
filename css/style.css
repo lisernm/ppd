@@ -23,14 +23,6 @@
     background-position: center;
     background-size: cover;
   }
-
-  .enunciat {
-    color: #000078;
-  }
-  
-  .num_tasca {
-    font-weight: bold;
-  }
   
   header {
     padding: var(--spacing-company) 0;
@@ -70,4 +62,18 @@
   aside p {
     margin-bottom: var(--spacing-company);
     line-height: 1.25;
+  }
+
+  .enunciat {
+    color: #000078;
+  }
+  
+  .num_tasca {
+    font-weight: bold;
+  }
+
+  .clip_video {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: var(--spacing);
   }
