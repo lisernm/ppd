@@ -24,6 +24,12 @@
                   <li><a href="#1.3">Tasca 1.3</a></li>
                   <li><a href="#1.4">Tasca 1.4</a></li>
                   <li><a href="#1.5">Tasca 1.5</a></li>
+                  <li><a href="#2.1">Tasca 2.1</a></li>
+                  <li><a href="#2.2">Tasca 2.2</a></li>
+                  <li><a href="#2.3">Tasca 2.3</a></li>
+                  <li><a href="#2.4">Tasca 2.4</a></li>
+                  <li><a href="#2.5">Tasca 2.5</a></li>
+                  <li><a href="#2.6">Tasca 2.6</a></li>
                 </ul>
               </details>
             </li>
@@ -57,18 +63,28 @@
             El clip de vídeo fa servir el codec H264 (MPEG-4) i el contenidor mp4. Té una resolució de 1920 x 1080 i un framerate de 25 fps. Es tracta del còdec més estès al web actualment, 
             d'una resolució prou bona per veure's correctament a la majoria de dispositius i que alhora permet contenir la mida del fitxer
             i una de les tasses de quadres per segon també més esteses, 25fps és el format europeu per defecte, tot i que 30fps també seria una opció vàlida.
-          </p>          
+          </p>        
           <figure>
-            <img src="img/clip1_info.PNG" alt="Detalls avidemux - clip 1" />
+            <img src="img/1_1_mediainfo.JPG" alt="Detalls Mediainfo - clip 1" />
             <figcaption>
-              Detalls avidemux - clip 1
+              Detalls Mediainfo - clip 1
             </figcaption>
           </figure>
           <p>
             Amb el proposit de fer el video encara més compatible amb la diversitat d'user agents dels diferents navegadors web, 
             s'ha codificat el video en VP9 amb contenidor webm.
-            TODO: FALTA CAPTURA MEDIAINFO
-          </p>           
+          </p>
+          <figure>
+            <img src="img/1_1_mediainfo_webm.JPG" alt="Detalls Mediainfo - clip 1 codificat a webm" />
+            <figcaption>
+              Detalls Mediainfo - clip 1 codificat a webm
+            </figcaption>
+          </figure>
+          <p>Als següents enllaços es poden descarregar els vídeos:</p>
+          <ul>
+            <li><a href="https://drive.google.com/file/d/1ehJyMKCMnULd5bnYr98iyeGFvx2_v0Yn/view?usp=sharing">Clip original (clip_1_original.mp4)</a></li>
+            <li><a href="https://drive.google.com/file/d/1FwGBFxLBmrEzgo3gWs528almMWfTZ8IL/view?usp=sharing">Clip transformat (clip_1.webm)</a></li>
+          </ul>                   
         </article>
         <article>
           <p class="enunciat">
@@ -137,17 +153,16 @@
           </p>
           <p>
             Tot i que el video no te so, s'ha afegit la propietat <strong>mute</strong> per dehabilitar la reproducció d'audio.
-            Tanmateix, s'ha afegit l'atribut <strong>autoplay</strong> per a que el video es reprodueixi automàticament
-            i <strong>loop</strong> per a que ho faci en bucle. A més, s'ha indicat al source que el video es reprodueixi 
+            Tanmateix, s'ha afegit l'atribut <strong>autoplay</strong> per a que el video es reprodueixi automàticament. A més, s'ha indicat al source que el video es reprodueixi 
             dels segons 2 a 8 mitjançant <strong>#t=2,8</strong>.
           </p>           
-          <pre><code>&lt;video muted autoplay loop poster=&quot;img/clip1_cover.JPG&quot; class=&quot;clip_video&quot;&gt;
+          <pre><code>&lt;video muted autoplay poster=&quot;img/clip1_cover.JPG&quot; class=&quot;clip_video&quot;&gt;
   &lt;source src=&quot;https://lisernm.blob.core.windows.net/ppd/clip_1.webm#t=2,8&quot; type=&quot;video/webm&quot;&gt;
   &lt;source src=&quot;https://lisernm.blob.core.windows.net/ppd/clip_1_original.mp4#t=2,8&quot; type=&quot;video/mp4&quot;&gt;
   &lt;p&gt;El teu navegador no pot reprodu&iuml;r aquest video.&lt;/p&gt;
 &lt;/video&gt;
 </code></pre>
-          <video muted autoplay loop poster="img/clip1_cover.JPG" class="clip_video">
+          <video muted autoplay poster="img/clip1_cover.JPG" class="clip_video">
             <source src="https://lisernm.blob.core.windows.net/ppd/clip_1.webm#t=2,8" type="video/webm">
             <source src="https://lisernm.blob.core.windows.net/ppd/clip_1_original.mp4#t=2,8" type="video/mp4">
             <p>El teu navegador no pot reproduïr aquest video.</p>
@@ -205,8 +220,69 @@
             TASA DE BITS MEDIA-DOS PASADAS (per mantenir la qualitat) i 5000 Kbps. Com format d'àudio, MP3 (lame) i com a contenidor, MKV. 
             Inclou aquests clips en el lliurament de la pràctica. Confirma amb MediaInfo que Avidemux ha realitzat la feina correctament.
           </p> 
-          <p>//TODO</p>
+          <p>S'ha descarregat un video sense drets d'autor que compleix els requisits de l'enunciat 
+            i s'ha codificat en el format indicat. 
+          </p>
+          <video controls poster="img/clip2_cover.JPG" class="clip_video">
+            <source src="https://lisernm.blob.core.windows.net/ppd/clip_2_original.mp4" type="video/mp4">
+            <p>El teu navegador no pot reproduïr aquest video.</p>
+          </video>      
+          <p>Als següents enllaços es poden descarregar els vídeos:</p>
+          <ul>
+            <li><a href="https://drive.google.com/file/d/1K5xByvRVVBIntZu4wTLGf4YGEWwVydik/view?usp=sharing">Clip original (clip_2_original.mp4)</a></li>
+            <li><a href="https://drive.google.com/file/d/18OTHZDL5HlbisWRxz6ql0Odw__CrbskD/view?usp=sharing">Clip transformat (clip_2.mkv)</a></li>
+          </ul>
+          <figure>
+            <img src="img/2_1_mediainfo.JPG" alt="Detalls mediainfo - clip 2" />
+            <figcaption>
+              Detalls Mediainfo - clip 2
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/2_1_mediainfo_audio.JPG" alt="Detalls mediainfo audio - clip 2" />
+            <figcaption>
+              Detalls Mediainfo audio - clip 2
+            </figcaption>
+          </figure>                              
         </article>
+        <article>
+          <p class="enunciat">
+            <span class="num_tasca" id="2.2">Tasca 2.2 </span>Configura una emissió repetitiva i una recepció del clip01 amb els mateixos valors emprats al clip de futbol. 
+            Al VLC d'emissió, menú EINES-INFORMACIÓ DEL CÓDEC-CÓDEC (a Mac: FINESTRA-INFORMACIÓ MULTIMÈDIA-DETALLS DEL CÓDEC), indica els còdecs amb els quals diu que es va generar el fitxer emmagatzemat. 
+            A ESTADÍSTIQUES indica la TAXA DE BITS DE CONTINGUT que està llegint de disc, és la necessària per a una reproducció correcta del contingut (és un valor canviant, de manera que pren un valor mitjà aproximat).
+          </p> 
+          <figure>
+            <img src="img/2_2_info_multimedia.JPG" alt="Detalls codec emisor - clip 2" />
+            <figcaption>
+              Detalls codec emisor - clip 2
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/2_2_estadistiques.JPG" alt="Detalls emisor - tasa de bits de contingut clip 2" />
+            <figcaption>
+              Detalls emisor - tasa de bits de contingut clip 2
+            </figcaption>
+          </figure>                                       
+        </article>
+        <article>
+          <p class="enunciat">
+            <span class="num_tasca" id="2.3">Tasca 2.3 </span>al VLC de recepció, mitjançant EINES-INFORMACION DEL CODEC-CÓDEC (a Mac: FINESTRA-INFORMACIÓ MULTIMÈDIA-DETALLS DEL CÓDEC) 
+            confirma que el stream està codificat en els formats de vídeo i àudio seleccionats. 
+            A ESTADÍSTIQUES indica la TAXA DE BITS DE CONTINGUT a la qual està arribant el stream (pren un valor mitjà aproximat).
+          </p> 
+          <figure>
+            <img src="img/2_3_info_multimedia.JPG" alt="Detalls codec receptor - clip 2" />
+            <figcaption>
+              Detalls codec receptor - clip 2
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/2_3_estadistiques.JPG" alt="Detalls receptor - tasa de bits de contingut clip 2" />
+            <figcaption>
+              Detalls receptor - tasa de bits de contingut clip 2
+            </figcaption>
+          </figure>                                       
+        </article>                 
       </section>
           
 
