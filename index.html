@@ -313,7 +313,52 @@
               Emisor i receptor amb estadístiques
             </figcaption>
           </figure>          
-        </article>                                
+        </article> 
+        <article>
+          <p class="enunciat">
+            <span class="num_tasca" id="2.6">Tasca 2.6 </span>
+            Enfocant-nos en la transmissió en viu d'un stream de vídeo mitjançant un servei de cloud CDN, aquests ofereixen múltiples modes de distribució, com per exemple streaming de baixa 
+            latència per entorns de mínim retard, streaming per OTT, etc... fins i tot interactiu!.
+            De les múltiples opcions que pots trobar, centra't en una i descriu el procés (màxim tres pàgines). 
+            Si en el procés s'apliquen polítiques específiques d'usuaris o recursos, roles de gestió i administració de serveis, indica-ho. I opcionalment 
+            i si l'entorn t'ho permet, fes un càlcul estimatiu de cost per minut d'una transmissió dins una mateixa regió 
+            d'un stream HD en directe per 10.000 usuaris simultanis.
+          </p> 
+          <p>Azure Media services ofereix un tipus de streaming en directe de baixa latencia anomenat HLS de latencia baja (LL-HLS). </p>
+          <p>Aquesta utilitat es pot fer servir tant en retransmició d'esdeveniments standard (720p) o premium (1080p), que son dos dels tipus que ofereix el CDN. Per aproficar aquesta característica
+            cal seleccionar StreamOptions.LowLatencyV2 si es realitza la configuració per API o "Baixa latència" si es fa pel portal web d'Azure.
+          </p>
+          <p>
+            L'ús d'aquesta opció presenta algunes limitacions respecte altres modalitats de retransmissió:
+          </p>
+          <ul>
+            <li>Només es permet una entrada RTMP</li>
+            <li>No s'admet sortida fluida</li>
+            <li>Es pot fer servir una sortida DASH però no  LL-DASH</li>
+            <li>Es recomana limitar el rang de cerca durant la reproducció en línia a un màxim de 30 minuts.</li>
+            <li>Només es poden arxivar fins a 6 hores de contingut en directe</li>
+            <li>Compatibilitat amb el servei FairPlay limitada</li>
+          </ul>
+          <p>
+            Per fer servir LowLatencyV2 cal realitzar els següents passos al portal d'Azure:
+          </p>
+          <ul>
+            <li>Configurar la seqüencia local (per exemple amb eines com OBS)</li>
+            <li>Crear un esdeveniment en directe i seleccionar una codificació de 720p o 1080p</li>
+            <li>Seleccionar el radio button de baixa latència</li>
+            <li>Activar la casella "Iniciar preparació de l'esdeveniment en directe per la entrada" 
+              per iniciar automàticament l'streaming en directe.</li>
+            <li>Seleccionar la resta d'opcions que es desitgin i premer el botó "Revisar i crear".</li>
+            <li>Copiar l'URL de streaming que es podrà fer servir als reproductors.</li>
+          </ul>
+          <p>El cost d'un minut de transmissió amb els paràmetres de l'enunciat és de 0,17€</p>
+          <figure>
+            <img src="img/2_6_calculadora.JPG" alt="Calculadora Azure" />
+            <figcaption>
+              Calculadora Azure
+            </figcaption>
+          </figure>                               
+        </article>                                        
       </section>
           
 
