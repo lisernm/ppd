@@ -46,6 +46,16 @@
       <!-- ./ Hero -->    
     <main class="container">
       <section>
+        <article>
+          <p>
+            La realització d'aquesta pràctica s'ha elaborat en format web. El codi font es pot consultar al següent repositori de github:
+            <a href="https://github.com/lisernm/ppd">https://github.com/lisernm/ppd</a>
+          </p>
+          
+          <p>Els clips de video es poden descarregar al següent enllaç de google drive: 
+            <a href="https://drive.google.com/drive/folders/1rk_Rp2FBxOWJQoKd_c0P9TAU4cLCFGVM?usp=sharing">https://drive.google.com/drive/folders/1rk_Rp2FBxOWJQoKd_c0P9TAU4cLCFGVM?usp=sharing</a>
+          </p>
+        </article>        
         <h3>Exercici 1 - Clip de vídeo incrustat en HTML 5</h3>
         <article>
           <p class="enunciat">
@@ -262,6 +272,7 @@
             <figcaption>
               Detalls emisor - tasa de bits de contingut clip 2
             </figcaption>
+            <p>Taxa de bits de contingut (s'ha pres la captura a un valor mitjà) 5560 kb/s</p> 
           </figure>                                       
         </article>
         <article>
@@ -281,8 +292,28 @@
             <figcaption>
               Detalls receptor - tasa de bits de contingut clip 2
             </figcaption>
-          </figure>                                       
-        </article>                 
+          </figure>
+          <p>Taxa de bits de contingut 1474 kb/s</p>                                     
+        </article>
+        <article>
+          <p class="enunciat">
+            <span class="num_tasca" id="2.4">Tasca 2.4 </span>si realitzes una pausa en el VLC emissor, quants segons triga en pausar-se el vídeo al receptor? Per què? Torna-ho a posar en reproducció.
+          </p> 
+          <p>El vídeo al receptor es pausa en aproximadament 1 segon. Tot i que estem executant l'emisor i receptor dins del mateix dispositiu existeix una latència derivada del procès de transformació que du a terme l'emisor.</p>                                     
+        </article>
+        <article>
+          <p class="enunciat">
+            <span class="num_tasca" id="2.5">Tasca 2.5 </span>Calcula aproximadament la compressió que el VLC d'emissió està realitzant al transcodificar el fitxer emmagatzemat a stream. 
+            Realitza una captura de pantalla de l'escriptori amb els dos VLC en marxa i les seves finestres amb les estadístiques de cadascun obertes, i insereix la captura en el document en el qual escrius les respostes d'aquesta pràctica.
+          </p> 
+          <p>Factor de compressió = tasa bits emisor / tasa bits receptor  = 5560 kbps / 1474 kbps = 3,77 </p>
+          <figure>
+            <img src="img/2_5.JPG" alt="Emisor i receptor amb estadístiques" />
+            <figcaption>
+              Emisor i receptor amb estadístiques
+            </figcaption>
+          </figure>          
+        </article>                                
       </section>
           
 
